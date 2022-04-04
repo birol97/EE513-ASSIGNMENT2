@@ -219,18 +219,10 @@ while(count < 100){
     rollvalues.push_back(this->getPitch());
 
    return     rollvalues;  //vectors that stores the pitch and roll sent to
-//sent to  getvector code where each vector mapped into pitch and roll
+//publisher
 
 	}
-std::vector<float> ADXL345::getvector(vector<float> vect,vector<float> vect2){
-
-map<std::string,std::vector<float>> pitchandroll;
-pitchandroll.insert(std::make_pair("Pitch",vect)); //map1
-pitchandroll.insert(std::make_pair("Roll",vect2)); //map2
-
-return vect; //sent to mqtt publisher client
-
-}; 
+ 
 
 
 ADXL345::~ADXL345() {}
